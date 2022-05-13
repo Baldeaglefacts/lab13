@@ -1,10 +1,10 @@
 let express = require('express')
-let path = require('path')
+let path = require('path') // for deployment
 let states_api = require('./routes/states')
 
 let app = express()
 
-app.use(express.static(path.join(__dirname, 'client', 'dist')))
+app.use(express.static(path.join(__dirname, 'client', 'dist'))) // for deployment
 
 app.use(express.json())   // enable parsing JSON sent with requests
 

@@ -1,8 +1,9 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import StateList from '@/components/StateList'
 import AboutSite from "@/components/AboutSite";
+import StateMap from "@/components/StateMap";
 
-//Sets the "home page" of the app
+
 export default createRouter({
     history: createWebHashHistory(),
     routes: [  // creates ways for components to be called, so they can be
@@ -16,6 +17,11 @@ export default createRouter({
             path: '/about',
             name: 'AboutSite',
             component: AboutSite
+        },
+        {
+            path: '/map/:state',
+            name: 'StateMap',
+            component: StateMap
         }
     ]
 })

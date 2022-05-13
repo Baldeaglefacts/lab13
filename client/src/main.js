@@ -5,7 +5,7 @@ import StateAPIService from '@/services/stateService' // imports my api
 
 import router from '@/router'
 
-// import 'leaflet/dist/leaflet.css'
+import 'leaflet/dist/leaflet.css' // added css so maps don't look weird
 
 let app = createApp(App)
 
